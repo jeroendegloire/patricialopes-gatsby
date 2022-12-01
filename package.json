@@ -64,8 +64,5 @@
   },
   "bugs": {
     "url": "https://github.com/jeroendegloire/patricialopes"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
