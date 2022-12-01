@@ -1,0 +1,649 @@
+/* purgecss start ignore */
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Poppins-Regular.ttf) format('ttf');
+}
+
+.hover\:smaller:hover img {
+  transform: scale(1);
+}
+
+.hover\:grow:hover {
+  transform: scale(1.1);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Poppins", Helvetiva, sans-serif;
+  color: #222;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+header {
+  padding: 20px;
+  max-width: 1800px;
+}
+
+header nav {
+  margin-bottom: -0.4rem;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    padding: 35px 40px;
+  }
+}
+header a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: #000;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header a.is-active:before,
+header a:hover:before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.filters-button-group li {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: inline-block;
+  padding: 4px 8px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+.filters-button-group li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% - 16px);
+  height: 2px;
+  background-color: #000;
+  opacity: 0;
+  bottom: -6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.filters-button-group .is-checked {
+  opacity: 1;
+}
+.filters-button-group .is-checked:after {
+  opacity: 1 !important;
+  bottom: 0 !important;
+}
+
+.gatsby-image-wrapper {
+  opacity: 1;
+  transition: opacity 500ms ease 0s;
+}
+
+#cinematography .gatsby-image-wrapper {
+  max-width: 100%;
+}
+
+#cinematography .gatsby-image-wrapper img {
+  transform: scale(1.03);
+  transition: all 0.2s ease !important;
+}
+
+#cinematography .cinematoGrid > div:hover img {
+  transform: scale(1);
+  transition: all 0.2s ease !important;
+}
+
+#cinematography .cinematoGrid > div:hover .hover {
+  opacity: 1;
+}
+
+.hover {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+.cinemato-image {
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cinematography-item {
+  height: auto;
+  width: 33%;
+  max-width: 100%;
+}
+
+@media all and (min-width: 1280px) {
+  .xl\:-left-6 {
+    left: -6rem;
+  }
+  .xl\:right-auto {
+    right: auto !important;
+  }
+  .lg\:w-1\/3 {
+    width: 33.3% !important;
+  }
+}
+
+.slider-mobile {
+  display: none;
+}
+
+.slider-desktop {
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  .slider-desktop {
+    display: none;
+  }
+
+  .slider-mobile {
+    display: block;
+  }
+}
+
+.slider-mobile .gatsby-image-wrapper {
+  margin-bottom: -2px;
+}
+
+.slider-desktop .gatsby-image-wrapper {
+  height: 90vh !important;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.dark-theme .logo,
+.dark-theme header button svg {
+  fill: #fff;
+}
+
+.dark-theme header a:before {
+  background-color: #fff;
+}
+
+.right-2 {
+  right: 2rem;
+}
+
+.top-3 {
+  top: 3rem;
+}
+
+.logo {
+  width: 400px;
+  max-width: 80%;
+}
+
+@media all and (min-width: 1024px) {
+  .logo {
+    max-width: 30%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease-out 1s;
+  -webkit-animation: fadeIn ease-out 1s;
+  -moz-animation: fadeIn ease-out 1s;
+  -o-animation: fadeIn ease-out 1s;
+  -ms-animation: fadeIn ease-out 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  margin: 0 0 0.8em;
+}
+
+.contact h2 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+h4 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-size: 13px;
+  padding: 10px 20px;
+  display: inline-block;
+  background: #000;
+  border: solid 2px black;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.scroll-button {
+  margin-top: -3rem;
+}
+
+main {
+  overflow: hidden;
+}
+
+.masonry-wrapper {
+  margin: 0 -10px;
+  margin-bottom: -10px;
+}
+
+.ril__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ril__image img {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ril__toolbar {
+  background: transparent !important;
+}
+
+.contact {
+  max-width: 100%;
+  color: black;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact img {
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.contact:before {
+  content: "";
+  padding-top: 41.7%;
+}
+
+.contact > div > b {
+  text-transform: uppercase;
+}
+
+.contact h2:after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -15px;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.swiper-container .swiper-button-prev:after,
+.swiper-container .swiper-button-next:after {
+  content: none;
+}
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
+  display: block;
+  z-index: 1;
+  border: none;
+  width: 20px;
+  height: 34px;
+  padding: 40px 30px;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+
+.swiper-container .swiper-button-prev:focus,
+.swiper-container .swiper-button-next:focus,
+.swiper-container .swiper-button-prev:hover,
+.swiper-container .swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-container .swiper-button-prev {
+  left: 0;
+  background: rgba(0, 0, 0, 0.2)
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==")
+    no-repeat 50% !important;
+}
+
+.swiper-container .swiper-button-next {
+  right: 0;
+  background: rgba(0, 0, 0, 0.2)
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDEsMyAyLC0yIDE2LDE2IC0xNiwxNiAtMSwtMSAxNSwtMTUgLTE1LC0xNSB6IiBmaWxsPSIjRkZGIi8+PC9zdmc+")
+    no-repeat 50% !important;
+}
+
+.contact-wrapper .gatsby-image-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.item-grid {
+  width: 100%;
+  transition: opacity 500ms ease;
+}
+
+.item--grid:hover,
+.item-grid:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.item--grid,
+.item__grid * {
+  transition: all 500ms ease;
+}
+
+.item__grid h2 {
+  font-size: 1.1rem;
+}
+
+.item__grid:before,
+.item-grid:before,
+.item--grid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: solid 2.5px white;
+  z-index: 1;
+}
+
+.item__grid .gatsby-image-wrapper,
+.item--grid > figure > div,
+.square > div,
+.landscape > div,
+.portrait > div {
+  position: relative;
+  overflow: hidden;
+}
+
+.item__grid img,
+.item--grid img,
+.square img,
+.landscape img,
+.portrait img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.square > div > div {
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.landscape > div > div {
+  padding-top: 50%;
+  width: 100%;
+}
+
+.portrait > div > div {
+  padding-top: 200%;
+  width: 100%;
+}
+
+.item--grid > figure > div {
+  padding-top: 50%;
+  width: 100%;
+}
+
+.item-grid {
+  opacity: 0;
+}
+
+.isotope-initialized .item-grid {
+  opacity: 1;
+}
+
+@media all and (min-width: 768px) {
+  .item-grid {
+    width: 25%;
+  }
+
+  .landscape {
+    width: 50%;
+  }
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion:after {
+  content: "+";
+  font-size: 18px;
+  font-weight: bold;
+  display: inline;
+  padding-left: 1rem;
+}
+
+.accordion.active:after {
+  content: "-";
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.video {
+  padding-top: 50%;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .video {
+    padding-top: 41.7%;
+  }
+}
+
+.react-player__preview {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video > div > div:not(.react-player__preview) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media all and (max-width: 768px) {
+  .swiper-container .swiper-slide {
+    transform: none !important;
+    height: auto !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.swiper-container img {
+  object-fit: cover;
+}
+
+@media all and (min-width: 768px) {
+  .swiper-container img,
+  .react-player__preview {
+    max-height: calc(100vh - 145px);
+    width: auto;
+  }
+}
+
+.ReactModalPortal .gatsby-image-wrapper {
+  flex: 1;
+}
+
+.gatsby-image-wrapper {
+  position: relative;
+}
+
+.ReactModalPortal img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+header button svg {
+  height: 1rem;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-container img {
+  margin: 0 auto;
+}
+
+h2 > * {
+  font: inherit;
+}
+
+.w-full img.relative {
+  margin: 0 auto;
+}
+
+/* purgecss stop ignore */
